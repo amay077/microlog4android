@@ -3,9 +3,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -25,15 +25,15 @@ import com.google.code.microlog4android.Level;
 
 /**
  * This class is used for formatting dates.
- * 
+ *
  * Minimum requirements; CLDC 1.0
- * 
+ *
  * @author Johan Karlsson (johan.karlsson@jayway.se)
- * 
+ *
  */
 public class DateFormatCommand implements FormatCommandInterface {
 	private static final String TAG = "Microlog.DateFormatCommand";
-	
+
 	public static int USER_FORMAT = 0;
 
 	public final static int ABSOLUTE_FORMAT = 1;
@@ -52,7 +52,7 @@ public class DateFormatCommand implements FormatCommandInterface {
 			"MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
 
 	private final Calendar calendar = Calendar.getInstance(TimeZone
-			.getTimeZone("GMT"));
+			.getTimeZone(""));
 
 	int format = ABSOLUTE_FORMAT;
 
@@ -103,7 +103,7 @@ public class DateFormatCommand implements FormatCommandInterface {
 
 	/**
 	 * Format as an absolute date time format, that is
-	 * 
+	 *
 	 * @param time
 	 *            the time to format.
 	 * @return the formatted <code>String</code>.
