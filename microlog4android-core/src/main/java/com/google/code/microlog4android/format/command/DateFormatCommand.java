@@ -16,6 +16,7 @@ package com.google.code.microlog4android.format.command;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 import android.util.Log;
@@ -51,8 +52,7 @@ public class DateFormatCommand implements FormatCommandInterface {
 	final static String[] MONTH_ARRAY = { "JAN", "FEB", "MAR", "APR",
 			"MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
 
-	private final Calendar calendar = Calendar.getInstance(TimeZone
-			.getTimeZone(""));
+	private final Calendar calendar = Calendar.getInstance(Locale.getDefault());
 
 	int format = ABSOLUTE_FORMAT;
 
